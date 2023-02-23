@@ -1,11 +1,5 @@
 from selene.support.shared import browser
 from selene import be, have
-import pytest
-
-@pytest.fixture
-def set_size_browser_window():
-    browser.config.window_width = 500
-    browser.config.window_height = 626
 
 
 def test_search_text(set_size_browser_window):
